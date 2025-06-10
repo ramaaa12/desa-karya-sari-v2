@@ -1,0 +1,51 @@
+{% extends "base_jp.html" %}
+{% block content %}
+
+<section class="section-title" style="text-align: center; border-radius: 20px;">
+  <h2>村のギャラリー</h2>
+  <p>カリャサリ村の生活、自然、文化を捉えた本物の瞬間をご覧ください。</p>
+</section>
+
+<section class="galeri-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);">
+  <figure style="margin: 0; text-align: center;">
+    <img src="/static/img/Sawah.jpg" alt="田んぼの風景" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+    <figcaption style="margin-top: 8px; font-size: 0.95rem; color: #444;">朝の緑豊かな田んぼのパノラマ – 自然探索に最適な場所。</figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img src="/static/img/panen.jpg" alt="稲刈り" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+    <figcaption style="margin-top: 8px; font-size: 0.95rem; color: #444;">村の農民が伝統的な方法で稲を刈る様子 – 訪問者が体験できる活動。</figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img src="/static/img/Galeri 3.jpg" alt="アリーナシュガーの製造" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+    <figcaption style="margin-top: 8px; font-size: 0.95rem; color: #444;">粘土のかまどで樹液をアリーナシュガーに加工するプロセス。</figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img src="/static/img/Upacara Adat.jpg" alt="伝統儀式" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+    <figcaption style="margin-top: 8px; font-size: 0.95rem; color: #444;">マトゥラン・グデ儀式のプロセスは、村の精神的価値観を反映しています。</figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img src="/static/img/Aktivitas Wisata.jpg" alt="観光活動" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+    <figcaption style="margin-top: 8px; font-size: 0.95rem; color: #444;">訪問者は竹細工やアリーナシュガー作りなどの観光活動を楽しんでいます。</figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img src="/static/img/Sumber Daya Desa.jpg" alt="村の資源" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+    <figcaption style="margin-top: 8px; font-size: 0.95rem; color: #444;">村の豊富な自然資源の可能性 – 農園や畜産を含む。</figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img src="/static/img/Kerajinan Lokal.jpg" alt="地元の工芸品" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+    <figcaption style="margin-top: 8px; font-size: 0.95rem; color: #444;">竹細工やヤシの葉の帽子などの地元の工芸品。</figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img src="/static/img/Maturan Alit.jpg" alt="マトゥラン・アリット" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+    <figcaption style="margin-top: 8px; font-size: 0.95rem; color: #444;">精神的な意味を持つ伝統儀式マトゥラン・アリット。</figcaption>
+  </figure>
+</section>
+
+{% endblock %}

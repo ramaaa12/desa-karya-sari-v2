@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="section-title" style="text-align: center; border-radius: 20px;">
+  <h2>Galeri Desa</h2>
+  <p>Potret kehidupan, alam, dan budaya Desa Karya Sari yang terekam dalam momen autentik.</p>
+</section>
+
+<section class="galeri-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);">
+  <figure style="margin: 0; text-align: center;">
+    <img src="/static/img/Sawah.jpg" alt="Pemandangan Sawah" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+    <figcaption style="margin-top: 8px; font-size: 0.95rem; color: #444;">Panorama sawah menghijau saat pagi hari – tempat favorit untuk jelajah alam.</figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img src="/static/img/panen.jpg" alt="Panen Padi" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+    <figcaption style="margin-top: 8px; font-size: 0.95rem; color: #444;">Petani desa memanen padi secara tradisional – pengalaman yang bisa diikuti pengunjung.</figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img src="/static/img/Galeri 3.jpg" alt="Pembuatan Gula Aren" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+    <figcaption style="margin-top: 8px; font-size: 0.95rem; color: #444;">Proses memasak nira menjadi gula aren dalam tungku tanah liat.</figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img src="/static/img/Upacara Adat.jpg" alt="Upacara Adat" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+    <figcaption style="margin-top: 8px; font-size: 0.95rem; color: #444;">Prosesi upacara Maturan Gede mencerminkan nilai-nilai spiritual masyarakat desa.</figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img src="/static/img/Aktivitas Wisata.jpg" alt="Aktivitas Wisata" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+    <figcaption style="margin-top: 8px; font-size: 0.95rem; color: #444;">Pengunjung menikmati aktivitas wisata seperti membuat kerajinan bambu dan gula aren.</figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img src="/static/img/Sumber Daya Desa.jpg" alt="Sumber Daya Desa" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+    <figcaption style="margin-top: 8px; font-size: 0.95rem; color: #444;">Potensi sumber daya alam desa yang melimpah, termasuk perkebunan dan peternakan.</figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img src="/static/img/Kerajinan Lokal.jpg" alt="Kerajinan Lokal" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+    <figcaption style="margin-top: 8px; font-size: 0.95rem; color: #444;">Kerajinan tangan lokal seperti anyaman bambu dan topi janur.</figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img src="/static/img/Maturan Alit.jpg" alt="Maturan Alit" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;">
+    <figcaption style="margin-top: 8px; font-size: 0.95rem; color: #444;">Upacara adat Maturan Alit yang penuh makna spiritual.</figcaption>
+  </figure>
+</section>
+
+{% endblock %}

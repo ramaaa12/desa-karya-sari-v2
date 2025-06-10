@@ -1,0 +1,49 @@
+{% extends "base_en.html" %}
+{% block content %}
+
+<section class="section-title" style="border-radius: 20px;">
+  <h2>Contact Us</h2>
+  <p>For more information about tourism, visits, or collaborations with Karya Sari Village, please contact us through the following information:</p>
+</section>
+
+<section class="profil-section" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px; border-radius: 20px;">
+  <div class="profil-text" style="flex: 1 1 45%; max-width: 500px; text-align: center; margin: 0 auto;">
+    <h3>Address</h3>
+    <p>Jalan Raya Karya Sari No. 88<br>Karya Sari Village, Harmoni District, Bali</p>
+
+    <h3>Phone / WhatsApp</h3>
+    <p>+62 812 3456 7890</p>
+
+    <h3>Email</h3>
+    <p>staff@desakaryasari.com</p>
+
+    <h3>Social Media</h3>
+    <p>
+      Instagram: <a href="https://instagram.com/desakaryasari" target="_blank">@desakaryasari</a><br>
+      Facebook: <a href="https://facebook.com/desakaryasari" target="_blank">Karya Sari Village</a>
+    </p>
+  </div>
+
+  <div class="profil-text" style="flex: 1 1 45%; max-width: 500px;">
+    <h3 style="text-align: center;">Contact Form</h3>
+    <form method="POST" action="/send-message">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message:</label>
+        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+      </div>
+      <div class="text-end">
+        <button type="submit" class="btn btn-success">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+{% endblock %}

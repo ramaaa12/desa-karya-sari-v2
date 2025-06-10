@@ -1,0 +1,49 @@
+{% extends "base_jp.html" %}
+{% block content %}
+
+<section class="section-title" style="border-radius: 20px;">
+  <h2>お問い合わせ</h2>
+  <p>観光、訪問、またはカリャサリ村との協力についての詳細情報は、以下の情報をご利用ください。</p>
+</section>
+
+<section class="profil-section" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px; border-radius: 20px;">
+  <div class="profil-text" style="flex: 1 1 45%; max-width: 500px; text-align: center; margin: 0 auto;">
+    <h3>住所</h3>
+    <p>ジャラン・ラヤ・カリャサリ No. 88<br>カリャサリ村、ハルモニ地区、バリ</p>
+
+    <h3>電話 / WhatsApp</h3>
+    <p>+62 812 3456 7890</p>
+
+    <h3>メール</h3>
+    <p>staff@desakaryasari.com</p>
+
+    <h3>ソーシャルメディア</h3>
+    <p>
+      Instagram: <a href="https://instagram.com/desakaryasari" target="_blank">@desakaryasari</a><br>
+      Facebook: <a href="https://facebook.com/desakaryasari" target="_blank">カリャサリ村</a>
+    </p>
+  </div>
+
+  <div class="profil-text" style="flex: 1 1 45%; max-width: 500px;">
+    <h3 style="text-align: center;">お問い合わせフォーム</h3>
+    <form method="POST" action="/kirim-pesan">
+      <div class="mb-3">
+        <label for="nama" class="form-label">名前:</label>
+        <input type="text" class="form-control" id="nama" name="nama" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">メールアドレス:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="pesan" class="form-label">メッセージ:</label>
+        <textarea class="form-control" id="pesan" name="pesan" rows="5" required></textarea>
+      </div>
+      <div class="text-end">
+        <button type="submit" class="btn btn-success">送信</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base_jp.html" %}
+{% block content %}
+
+<section class="section-title" style="text-align: center; background: white; border-radius: 20px; padding: 30px; margin-bottom: 40px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+  <h2>カリャサリ村のプロフィール</h2>
+  <p>文化と自然の本物の魅力を一つの観光村で体験してください。</p>
+</section>
+
+<section class="profil-section" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; cursor:pointer;" onclick="window.location.href='/tentang_desa_jp'">
+  <div class="profil-text" style="flex: 1 1 400px; max-width: 600px; text-align: center;">
+    <h3>村について</h3>
+    <p>カリャサリ村はバリ島の田舎に位置する観光村です。緑豊かな田んぼ、新鮮な空気、静かな生活が特徴で、本物の体験を求める観光客にとって理想的な目的地です。</p>
+  </div>
+  <img src="/static/img/Sawah Desa.jpg" alt="村の田んぼ" style="flex: 1 1 300px; max-width: 400px; border-radius: 12px; margin: 20px;">
+</section>
+
+<section class="profil-section" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; cursor:pointer;" onclick="window.location.href='/aktivitas_wisata_jp'">
+  <div class="profil-text" style="flex: 1 1 400px; max-width: 600px; text-align: center;">
+    <h3>観光活動</h3>
+    <p>訪問者は田んぼの景色を楽しみながら食事をしたり、竹細工を作ったり、地元の人々と一緒に砂糖ヤシやコランカリンの製造プロセスを体験することができます。</p>
+  </div>
+  <img src="/static/img/Aktivitas Wisata.jpg" alt="観光活動" style="flex: 1 1 300px; max-width: 400px; border-radius: 12px; margin: 20px;">
+</section>
+
+<section class="profil-section" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; cursor:pointer;" onclick="window.location.href='{{ url_for('pelestarian_budaya_jp') }}'">
+  <div class="profil-text" style="flex: 1 1 400px; max-width: 600px; text-align: center;">
+    <h3>文化保存</h3>
+    <p>マトゥラン・アリットやヌアナン・ガンブなどの伝統的な儀式は、世代を超えて守られています。この村は、持続可能で環境に優しい観光の発展にも取り組んでいます。</p>
+  </div>
+  <img src="/static/img/Maturan Alit.jpg" alt="文化保存" style="flex: 1 1 300px; max-width: 400px; border-radius: 12px; margin: 20px;">
+</section>
+
+{% endblock %}

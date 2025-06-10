@@ -1,0 +1,33 @@
+{% extends "base_en.html" %}
+{% block content %}
+
+<section class="section-title" style="text-align: center; background: white; border-radius: 20px; padding: 30px; margin-bottom: 40px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+  <h2>Karya Sari Village Profile</h2>
+  <p>Explore the authenticity of culture and nature in a sustainable tourism village.</p>
+</section>
+
+<section class="profil-section" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; cursor:pointer;" onclick="window.location.href='/tentang_desa_en'">
+  <div class="profil-text" style="flex: 1 1 400px; max-width: 600px; text-align: center;">
+    <h3>About the Village</h3>
+    <p>Karya Sari Village is a tourism village located in the rural area of Bali. With green rice fields, fresh air, and a peaceful lifestyle, it is an ideal destination for travelers seeking tranquility and authentic experiences.</p>
+  </div>
+  <img src="/static/img/Sawah Desa.jpg" alt="Village Rice Field" style="flex: 1 1 300px; max-width: 400px; border-radius: 12px; margin: 20px;">
+</section>
+
+<section class="profil-section" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; cursor:pointer;" onclick="window.location.href='/aktivitas_wisata_en'">
+  <div class="profil-text" style="flex: 1 1 400px; max-width: 600px; text-align: center;">
+    <h3>Tourist Activities</h3>
+    <p>Visitors can enjoy meals with rice field views, make bamboo crafts, and join the process of making palm sugar and kolang-kaling directly with the locals.</p>
+  </div>
+  <img src="/static/img/Aktivitas Wisata.jpg" alt="Tourist Activities" style="flex: 1 1 300px; max-width: 400px; border-radius: 12px; margin: 20px;">
+</section>
+
+<section class="profil-section" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; cursor:pointer;" onclick="window.location.href='/pelestarian_budaya_en'">
+  <div class="profil-text" style="flex: 1 1 400px; max-width: 600px; text-align: center;">
+    <h3>Cultural Preservation</h3>
+    <p>Traditional ceremonies such as Maturan Alit and Nuanan Gambuh are preserved and carried out from generation to generation. The village is also committed to developing sustainable and eco-friendly tourism.</p>
+  </div>
+  <img src="/static/img/Maturan Alit.jpg" alt="Cultural Preservation" style="flex: 1 1 300px; max-width: 400px; border-radius: 12px; margin: 20px;">
+</section>
+
+{% endblock %}

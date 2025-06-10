@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="section-title" style="text-align: center; background: white; border-radius: 20px; padding: 30px; margin-bottom: 40px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+  <h2>Profil Desa Karya Sari</h2>
+  <p>Menjelajahi keaslian budaya dan alam dalam satu hamparan desa wisata yang lestari.</p>
+</section>
+
+<section class="profil-section" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; cursor:pointer;" onclick="window.location.href='/tentang_desa'">
+  <div class="profil-text" style="flex: 1 1 400px; max-width: 600px; text-align: center;">
+    <h3>Tentang Desa</h3>
+    <p>Desa Karya Sari adalah desa wisata yang terletak di kawasan pedesaan Bali. Dengan hamparan sawah hijau, udara segar, dan kehidupan yang tenang, desa ini menjadi destinasi ideal bagi wisatawan yang mencari ketenangan dan pengalaman otentik.</p>
+  </div>
+  <img src="/static/img/Sawah Desa.jpg" alt="Sawah Desa" style="flex: 1 1 300px; max-width: 400px; border-radius: 12px; margin: 20px;">
+</section>
+
+<section class="profil-section" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; cursor:pointer;" onclick="window.location.href='/aktivitas_wisata'">
+  <div class="profil-text" style="flex: 1 1 400px; max-width: 600px; text-align: center;">
+    <h3>Aktivitas Wisata</h3>
+    <p>Pengunjung dapat menikmati makanan dengan pemandangan sawah, membuat kerajinan bambu, serta mengikuti proses pembuatan gula aren dan kolang-kaling secara langsung dari masyarakat setempat.</p>
+  </div>
+  <img src="/static/img/Aktivitas Wisata.jpg" alt="Aktivitas Wisata" style="flex: 1 1 300px; max-width: 400px; border-radius: 12px; margin: 20px;">
+</section>
+
+<section class="profil-section" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; cursor:pointer;" onclick="window.location.href='{{ url_for('pelestarian_budaya') }}'">
+  <div class="profil-text" style="flex: 1 1 400px; max-width: 600px; text-align: center;">
+    <h3>Pelestarian Budaya</h3>
+    <p>Upacara adat seperti Maturan Alit dan Nuanan Gambuh tetap dijaga dan dilaksanakan secara turun-temurun. Desa ini juga berkomitmen untuk mengembangkan wisata secara berkelanjutan dan ramah lingkungan.</p>
+  </div>
+  <img src="/static/img/Maturan Alit.jpg" alt="Pelestarian Budaya" style="flex: 1 1 300px; max-width: 400px; border-radius: 12px; margin: 20px;">
+</section>
+
+{% endblock %}
